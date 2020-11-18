@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import {
     ContentContainer
 } from './styled';
@@ -8,9 +9,17 @@ import {
 const Content = () => {
     return(
         <ContentContainer>
-            <h1>
-                this is the content page!
-            </h1>
+            <div>
+                <h1>Messages from people who love you!</h1>
+            </div>
+            <div>
+                <h2>messages go here</h2>
+            </div>
+            <div>
+                <div>
+                    <Link to='/messageform'>Leave Tracy a birthday message!</Link>
+                </div>
+            </div>
         </ContentContainer>
     )
 }
