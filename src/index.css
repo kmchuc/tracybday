@@ -1,15 +1,5 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 @font-face {
@@ -25,4 +15,9 @@ code {
 @font-face {
   font-family: 'Courier New';
   src: local('Courier New'), url(./fonts/Courier\ New.ttf)
+}
+
+@font-face {
+  font-family: 'BookmanStd-Medium';
+  src: local('BookmanStd-Medium'), url(./fonts/BookmanStd-Medium.otf)
 }

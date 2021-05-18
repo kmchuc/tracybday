@@ -1,8 +1,8 @@
 import React from 'react';
-import { HashRouter, Route, Router, Switch, Link } from 'react-router-dom';
-import './App.css';
-import Homepage from './components/Homepage';
-import Content from './components/Content';
+import { HashRouter, Route } from 'react-router-dom';
+import Homepage from './components/Home/Homepage';
+import Content from './components/Content/Content';
+import MessageForm from './components/Messages/MessageForm';
 
 function App() {
   return(
@@ -10,6 +10,7 @@ function App() {
       <div className='App'>
         <Route exact path='/' component={Homepage} />
         <Route path='/content' component={Content} />
+        <Route path='/messageform' component={MessageForm} />
       </div>
     </HashRouter>
   );
