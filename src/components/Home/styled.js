@@ -58,11 +58,3 @@ export const OpeningButtonLink = styled(Link)`
         color: red;
     }
 `;
-
-export const ContentContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-`;

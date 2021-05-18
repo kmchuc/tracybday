@@ -1,7 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import Tracyvideo from '../video/Tracyvideo.mp4';
-import { Link } from 'react-router-dom';
+import Tracyvideo from './Tracyvideo.mp4';
 import {
     HomePageContainer,
     TracyVideo,
@@ -9,7 +7,7 @@ import {
     OpeningMessageText,
     OpeningButton,
     OpeningButtonLink
-} from './styled'
+} from './styled';
 
 const Homepage = () => {
     return(

@@ -1,9 +1,8 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
-import './App.css';
-import Homepage from './components/Homepage';
-import Content from './components/Content';
-import MessageForm from './components/MessageForm';
+import Homepage from './components/Home/Homepage';
+import Content from './components/Content/Content';
+import MessageForm from './components/Messages/MessageForm';
 
 function App() {
   return(
