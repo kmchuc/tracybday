@@ -2,7 +2,7 @@ import React , { useState } from 'react';
 import {
     MessageFormContainer,
     MessageFormTitleDiv,
-    MessageFormTitle
+    MessageFormTitle,
 } from './styled';
 
 const MessageForm = () => {

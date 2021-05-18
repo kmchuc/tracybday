@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 
 @font-face {
   font-family: 'BookmanStd-DemiItalic';
@@ -12,4 +15,9 @@
 @font-face {
   font-family: 'Courier New';
   src: local('Courier New'), url(./fonts/Courier\ New.ttf)
+}
+
+@font-face {
+  font-family: 'BookmanStd-Medium';
+  src: local('BookmanStd-Medium'), url(./fonts/BookmanStd-Medium.otf)
 }

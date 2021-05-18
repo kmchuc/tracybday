@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import {
     ContentContainer,
     ContentTitle,
     ContentTitleText,
     ContentMessageDisplayContainer,
     MessageFormButtonContainer,
-    ContentMessages
+    ContentMessages,
+    MessageDiv,
+    MessageFormButtonLink
 } from './styled';
 
 const Content = () => {
@@ -35,22 +36,18 @@ const Content = () => {
                 <ContentTitleText>Messages from your #1 fans</ContentTitleText>
             </ContentTitle>
             <ContentMessageDisplayContainer>
-                <div>
                 {allMessages.map((messages, index) => {
                     return(
                         <ContentMessages key={index}>
-                            <div>
-                                <p>{ messages.message }</p>
-                                <p>{ messages.name }</p>
-                            </div> 
+                            <MessageDiv>
+                                <p><b>Message: </b>{ messages.message }</p>
+                                <p><b>From: </b>{ messages.name }</p>
+                            </MessageDiv>
                         </ContentMessages>)
                 })}
-                </div>
             </ContentMessageDisplayContainer>
             <MessageFormButtonContainer>
-                <div>
-                    <Link to='/messageform'>Leave Tracy a birthday message!</Link>
-                </div>
+                <MessageFormButtonLink to='/messageform'>Leave Tracy a birthday message!</MessageFormButtonLink>
             </MessageFormButtonContainer>
         </ContentContainer>
     )
