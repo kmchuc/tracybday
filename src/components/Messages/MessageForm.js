@@ -1,13 +1,22 @@
 import React , { useState } from 'react';
+import { Redirect } from 'react-router';
 import {
     MessageFormContainer,
     MessageFormTitleDiv,
     MessageFormTitle,
+    MessageFormDiv,
+    Form,
+    MessageFormLabel,
+    MessageInputBox,
+    MessageFromLabel,
+    FromInput,
+    MessageFormButton
 } from './styled';
 
 const MessageForm = () => {
     const [message, setMessage] = useState("")
     const [from, setFrom] = useState("")
+    const [redirect, setRedirect] = useState()
 
     async function addMessage() {
         try {
@@ -25,6 +34,15 @@ const MessageForm = () => {
             console.log("error", error);
         }
     }
+
+    const submitFunction = () => {
+        setRedirect('/content');
+    };
+
+    if (redirect) {
+        return <Redirect push to='/content' />;
+    }
+
     console.log('message', message)
     console.log('from', from)
 
@@ -33,14 +51,30 @@ const MessageForm = () => {
             <MessageFormTitleDiv>
                 <MessageFormTitle>Leave Tracy a birthday message!</MessageFormTitle>
             </MessageFormTitleDiv>
-            <form>
-                <label htmlFor="message">Message:</label><br/>
-                <textarea type='text' id='message' value={message} onChange={e => setMessage(e.target.value)}/><br/>
-                <label htmlFor="from">From:</label><br/>
-                <input type='text'  id='from' value={from} onChange={e => setFrom(e.target.value)}/><br/>
+            <MessageFormDiv>
+            <Form onSubmit={submitFunction}>
+                <MessageFormLabel htmlFor="message">Message:</MessageFormLabel><br/>
+                <MessageInputBox 
+                    type='text' 
+                    id='message' 
+                    value={message} 
+                    onChange={e => setMessage(e.target.value)}
+                /><br/>
+                <MessageFromLabel htmlFor="from">From:</MessageFromLabel><br/>
+                <FromInput 
+                    type='text'  
+                    id='from' 
+                    value={from} 
+                    onChange={e => setFrom(e.target.value)}
+                /><br/>
                 <br/>
-                <button onClick={addMessage}>Submit</button>
-            </form>
+                <MessageFormButton 
+                onClick={addMessage}
+                disabled={!message || !from}>
+                Submit
+                </MessageFormButton>
+            </Form>
+            </MessageFormDiv>
         </MessageFormContainer>
     )
 }
