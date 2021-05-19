@@ -14,9 +14,9 @@ import {
 } from './styled';
 
 const MessageForm = () => {
-    const [message, setMessage] = useState("")
-    const [from, setFrom] = useState("")
-    const [redirect, setRedirect] = useState()
+    const [message, setMessage] = useState("");
+    const [from, setFrom] = useState("");
+    const [redirect, setRedirect] = useState();
 
     async function addMessage() {
         try {
@@ -66,7 +66,8 @@ const MessageForm = () => {
                     id='from' 
                     value={from} 
                     onChange={e => setFrom(e.target.value)}
-                /><br/>
+                />
+                <br/>
                 <br/>
                 <MessageFormButton 
                 onClick={addMessage}

@@ -3,6 +3,8 @@ import {
     ContentContainer,
     ContentTitle,
     ContentTitleText,
+    WhyDiv,
+    WhyLink,
     ContentMessageDisplayContainer,
     MessageFormButtonContainer,
     ContentMessages,
@@ -34,6 +36,9 @@ const Content = () => {
         <ContentContainer>
             <ContentTitle>
                 <ContentTitleText>Messages from your #1 fans</ContentTitleText>
+                <WhyDiv>
+                    <WhyLink to='/about'>About</WhyLink>
+                </WhyDiv>
             </ContentTitle>
             <ContentMessageDisplayContainer>
                 {allMessages.map((messages, index) => {

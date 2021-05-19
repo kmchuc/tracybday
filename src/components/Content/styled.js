@@ -13,6 +13,7 @@ export const ContentContainer = styled.div`
 export const ContentTitle = styled.div`
     display: flex;
     align-self: center;
+    justify-content: space-between;
     height: 8%;
     width: 90%;
     margin-top: 2px;
@@ -21,6 +22,18 @@ export const ContentTitle = styled.div`
 
 export const ContentTitleText = styled.h1`
     font-family: BookmanStd-Medium;
+`;
+
+export const WhyDiv = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const WhyLink = styled(Link)`
+    font-family: BookmanStd-Medium;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: black;
 `;
 
 export const ContentMessageDisplayContainer = styled.div`
