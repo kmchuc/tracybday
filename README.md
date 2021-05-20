@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+<br />
+<p align="center">
+  <h3 align="center">Tracy's Bday</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p align="center">
+    Due to the Covid-19 pandemic, my sister and I couldn't see each other for her 21st birthday. I decided to use my developer skills to create this full stack application. I created a message board allowing her friends and family to post a personal birthday message! 
+    <br />
+    <a href="https://github.com/kmchuc/tracybday"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://tracybday.herokuapp.com/#/">View Demo</a>
+      ·
+    <a href="https://github.com/kmchuc/tracybday/issues">Report Bug</a>
+  </p>
+</p>
 
-## Available Scripts
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-In the project directory, you can run:
+## About The Project
 
-### `npm start`
+[![Landing Page Screenshot](https://user-images.githubusercontent.com/59525393/118931595-ee982480-b8e2-11eb-8da2-404ab350622c.png)](https://tracybday.herokuapp.com/#/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+My little sister and I have celebrated every birthday together until this year. Due to COVID-19 restrictions, my sister had to stay in California for school and I returned home to Hawaii after graduating from my bootcamp. Since we were separated by the Pacific Ocean, I decided to put my coding skills to good use and created a message board where friends and family could post messages celebrating her birthday! 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Built With
 
-### `npm test`
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+* [React](https://reactjs.org/)
+* [PostgreSQL](https://www.postgresql.org/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get a local copy up and running follow these simple steps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repo
+   ```sh
+   git clone https://github.com/kmchuc/tracybday
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Landing Page
+<img src='https://user-images.githubusercontent.com/59525393/118933807-5a7b8c80-b8e5-11eb-9cc5-1658b167d6a0.gif' width='1000' height='475'/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The landing page displays a looped video made up of clips from my sister's childhood. The 'Let's Party!' button leads you to the next page which displays all the messages left for my sister.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Content Page
+<img src='https://user-images.githubusercontent.com/59525393/119043539-d9f47480-b954-11eb-9dc7-bb6f0b342cc7.gif' width='1000' height='475'/>
 
-## Learn More
+The content page displays the messages submitted by friends. The process of posting your message consists of clicking the "Leave Tracy a birthday message!". The submit button will not be click-able until both fields within the form are filled. Once submitted, you will be redirected back to the content page, dynamically refreshing the page, showing your new message along with previously posted messages.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### About Page
+![About Page](https://user-images.githubusercontent.com/59525393/119045702-833c6a00-b957-11eb-9f9d-a922db2b7512.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This page shows the reason why I created this web application. To show my appreciation for my younger sister, I hope this project helped brighten her day through these tough times.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Analyzing the Bundle Size
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+Kimberly Chuc - [Personal Portfolio](https://kimberlychuc.com/#/) - kimmchuc@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [Heroku Link](https://tracybday.herokuapp.com/#/) - [Github Link](https://github.com/kmchuc/tracybday)
